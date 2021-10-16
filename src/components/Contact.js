@@ -84,7 +84,7 @@ function Contact(props) {
 							<button
 								className={'button is-medium' + (pending ? ' is-loading' : '')}
 								type='submit'>
-								send
+								send boð
 							</button>
 						</div>
 					</div>
