@@ -47,6 +47,7 @@ function Contact(props) {
 				<div className='field-horizontal'>
 					<div className='field-body'>
 						<FormField
+							className='teigar'
 							name='name'
 							type='text'
 							size='medium'
@@ -58,6 +59,7 @@ function Contact(props) {
 						/>
 
 						<FormField
+							className='teigar'
 							name='email'
 							type='email'
 							size='medium'
@@ -69,6 +71,7 @@ function Contact(props) {
 						/>
 
 						<FormField
+							className='teigar'
 							name='message'
 							type='textarea'
 							size='medium'
@@ -80,7 +83,7 @@ function Contact(props) {
 							})}
 						/>
 
-						<div className='control'>
+						<div className='btn'>
 							<button
 								className={'button is-medium' + (pending ? ' is-loading' : '')}
 								type='submit'>
