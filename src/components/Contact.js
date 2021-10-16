@@ -44,19 +44,18 @@ function Contact(props) {
 			)}
 
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<div className='field is-horizontal'>
+				<div className='field-horizontal'>
 					<div className='field-body'>
-						{props.showNameField && (
-							<FormField
-								name='name'
-								type='text'
-								placeholder='Name'
-								error={errors.name}
-								inputRef={register({
-									required: 'Please enter your name',
-								})}
-							/>
-						)}
+						<FormField
+							name='name'
+							type='text'
+							size='medium'
+							placeholder='Name'
+							error={errors.name}
+							inputRef={register({
+								required: 'Please enter your name',
+							})}
+						/>
 
 						<FormField
 							name='email'
@@ -68,10 +67,7 @@ function Contact(props) {
 								required: 'Please enter your email',
 							})}
 						/>
-					</div>
-				</div>
-				<div className='field is-horizontal'>
-					<div className='field-body'>
+
 						<FormField
 							name='message'
 							type='textarea'
@@ -83,16 +79,13 @@ function Contact(props) {
 								required: 'Please enter a message',
 							})}
 						/>
-					</div>
-				</div>
-				<div className='field is-horizontal'>
-					<div className='field-body'>
-						<div className='field'>
-							<div className='control'>
-								<button className='#' type='submit'>
-									click me
-								</button>
-							</div>
+
+						<div className='control'>
+							<button
+								className={'button is-medium' + (pending ? ' is-loading' : '')}
+								type='submit'>
+								send
+							</button>
 						</div>
 					</div>
 				</div>

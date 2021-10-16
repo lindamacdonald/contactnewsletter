@@ -30,7 +30,7 @@ function FormField(props) {
         )}
       </div>
 
-      {error && <p className="help is-danger">{error.message}</p>}
+      {error && <p className="help-danger">{error.message}</p>}
     </div>
   );
 }

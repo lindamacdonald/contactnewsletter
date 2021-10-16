@@ -1,5 +1,18 @@
-.ContactSection {
-  &__container {
-    max-width: 850px !important;
-  }
+.btn {
+	display: inline-block;
+	background-color: transparent;
+	padding: 15px 50px;
+	border: solid 1px rgb(47, 32, 116);
+	border-radius: 50px;
+}
+
+.field-horizontal {
+	display: flex;
+	flex-flow: column;
+	margin: 20px;
+	background-color: red;
+}
+
+.teigar {
+	padding: 120px;
 }
